@@ -1,14 +1,17 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = False
 
 ALLOWED_HOSTS = ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
-
+APPEND_SLASH = True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
