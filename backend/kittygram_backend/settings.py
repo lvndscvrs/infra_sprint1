@@ -11,6 +11,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
+
+print("SECRET_KEY:", SECRET_KEY)
+print("ALLOWED_HOSTS:", ALLOWED_HOSTS)
+
 APPEND_SLASH = True
 INSTALLED_APPS = [
     'django.contrib.admin',

@@ -1,5 +1,5 @@
 IP: 84.201.137.92;
 name_taski: https://yapctesting.ddns.net;
 name_kittygram: https://kittygramforpr.zapto.org;
-login: yc-user;
+login: admin;
 password: 123;
